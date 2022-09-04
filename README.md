@@ -4,11 +4,22 @@
   <img src="https://user-images.githubusercontent.com/65187002/188329602-69cc62c8-f575-418e-a5ac-d350de35dd0d.png">
 </div>
 
+<a name="Description"></a>
+
 # 🔄 Description 🔄
 
 [Deterministic Finite Automata](https://en.wikipedia.org/wiki/Deterministic_finite_automaton) (DFA) simulator written in [Prolog](https://en.wikipedia.org/wiki/Prolog).
 
+### Table of Contents:
+- [Definitions](#Definitions)
+- [Specification](#Specification)
+- [Predicates](#Predicates)
+- [Examples](#Examples)
+- [Example usage](#Example_usage)
+
 <br>
+
+<a name="Definitions"></a>
 
 # 📃 Definitions 📃
 
@@ -35,6 +46,8 @@ $$ L(A) = \\{ w: \text{automaton} \ A \ \text{accepts the word} \ w \\} $$
 
 <br>
 
+<a name="Specification"></a>
+
 # 🔀 Specification 🔀
 
 A DFA is represented by terms of the form:
@@ -47,6 +60,8 @@ where:
 - `AcceptStatesSet` is a list of all unique accept states of an automaton
 
 <br>
+
+<a name="Predicates"></a>
 
 # ⏺ Predicates ⏺
 
@@ -79,6 +94,8 @@ True $\iff$ $L($`Automaton1`$) = L($`Automaton2`$)$ and the alphabets of both au
 True $\iff$ $L($`Automaton1`$) \subseteq L($`Automaton2`$)$ and the alphabets of both automata are equal.
 
 <br>
+
+<a name="Examples"></a>
 
 # ✨ Examples ✨
 
@@ -114,6 +131,8 @@ Automaton `a3` accepts words of form $(aa)^n, \  n \geq 0$, automaton `a4` accep
 The languages accepted by automata `a6` and `a7` are empty, since the set of accept states of automaton `a6` is empty, and the only accept state of automaton `a7` is not reachable from the initial state.
 
 <br>
+
+<a name="Example_usage"></a>
 
 # ⏩ Example usage ⏩
 
